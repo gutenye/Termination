@@ -34,6 +34,22 @@ class StatusBar extends View
         return unless @activeTerminal
         return if @activeTerminal.isAnimating()
         @activeTerminal.open() if @activePrevTerminalView()
+      'termiation:active-1': =>
+        return unless @activeTerminal
+        return if @activeTerminal.isAnimating()
+        @activeTerminal.open() if @activeTerminalView(0)
+      'termiation:active-2': =>
+        return unless @activeTerminal
+        return if @activeTerminal.isAnimating()
+        @activeTerminal.open() if @activeTerminalView(1)
+      'termiation:active-3': =>
+        return unless @activeTerminal
+        return if @activeTerminal.isAnimating()
+        @activeTerminal.open() if @activeTerminalView(2)
+      'termiation:active-4': =>
+        return unless @activeTerminal
+        return if @activeTerminal.isAnimating()
+        @activeTerminal.open() if @activeTerminalView(3)
       'termination:close': => @destroyActiveTerm()
       'termination:close-all': => @closeAll()
       'termination:rename': => @runInActiveView (i) -> i.rename()
