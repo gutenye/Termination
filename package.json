@@ -80,10 +80,5 @@
         "0.14.5": "provideRunInTerminal"
       }
     }
-  },
-  "apmInstallSource": {
-    "type": "git",
-    "source": "gutenye/termination",
-    "sha": "a976d8596cc0b446258b6b9965069346a8fc6de4"
   }
 }
